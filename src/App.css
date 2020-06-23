@@ -25,6 +25,9 @@
 
 body {
   margin: 0;
+  background-image: url('./components/image/airsplat.png');
+  text-align: center;
+  
 }
 
 /**
@@ -41,8 +44,14 @@ main {
  */
 
 h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
+  font-size: 80px;
+  color: black;
+  margin-top: 100px;
+}
+
+h2 {
+  font-size: 50px;
+  color: black;
 }
 
 /* Grouping content
