@@ -79,7 +79,7 @@ render() {
     <div>
       <div className="calculator-frame">
         <h1>Super Simple Calculator</h1>
-        <h2>You Try It!</h2>
+        <h2>Go Ahead, You Try It!</h2>
         <Outcome outcome={this.state.outcome}/>
         <NumberPad onClick={this.onClick}/>
       </div>
