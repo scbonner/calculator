@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Outcome from './components/Outcome';
 import NumberPad from './components/NumberPad';
-// import Jumbotron from 'react-bootstrap/Jumbotron';
+import * as math from 'mathjs';
 import './App.css';
 
 class App extends Component {
@@ -10,6 +10,7 @@ class App extends Component {
 
       this.state = {
         outcome: " "
+       
       }
     }
 
@@ -26,6 +27,7 @@ class App extends Component {
     else if(button === "CE"){
       this.backspace()
     }
+
     else {
       this.setState({
         outcome: this.state.outcome + button
@@ -36,20 +38,12 @@ class App extends Component {
 
 
 calculate = () => {
-  var getOutcome = ''
-  if(this.state.outcome.includes('--')){
-    getOutcome = this.state.outcome.replace('--', '+')
-  }
-
-  else {
-    getOutcome = this.state.outcome
-  }
-
+ 
   try {
     this.setState({
-      outcome: (eval(this.state.outcome) || "") + ""
+      outcome: math.evaluate(this.state.outcome)
 
-    })
+    });
     
   } catch (e) {
       this.setState({
@@ -58,9 +52,8 @@ calculate = () => {
       })
 
   }
-
+  
   };
-
   
 reset = () => {
   this.setState({
@@ -76,14 +69,15 @@ backspace = () => {
   })
 };
 
+
 render() {
   return (
     <div>
       <h1>"Super Simple Calculator"</h1>
-      <h2>Learning activity designed specifically for Grandparents and their Grandchildren!</h2>
+      <h2>Designed specifically for Grandparents and their Grandchildren!</h2>
       <div className="calculator-frame">
-        <Outcome outcome={this.state.outcome}/>
-        <NumberPad onClick={this.onClick}/>
+        <Outcome outcome={this.state.outcome} />
+        <NumberPad onClick={this.onClick} />
       </div>
     </div>
 

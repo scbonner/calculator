@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 
 
+//displays buttons and outline of calculator
+
 class NumberPad extends Component {
 
     render() {
