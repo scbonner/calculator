@@ -34,7 +34,6 @@ class NumberPad extends Component {
                 <button name="=" onClick={e => this.props.onClick(e.target.name)}>=</button>
                 <button name="/" onClick={e => this.props.onClick(e.target.name)}>/</button><br></br>
 
-
             </div>
 
                 

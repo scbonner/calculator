@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 
-class CalculatorOutcome extends Component {
+class Outcome extends Component {
 
     
 
@@ -16,4 +16,4 @@ class CalculatorOutcome extends Component {
     }
 }
 
-export default CalculatorOutcome;
+export default Outcome;
