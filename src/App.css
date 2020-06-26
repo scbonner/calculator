@@ -28,6 +28,7 @@ body {
   background-image: url('./components/image/airsplat.png');
   text-align: center;
   
+  
 }
 
 /**
@@ -45,9 +46,14 @@ main {
 
 h1 {
   font-size: 50px;
-  font-style: ;
+  /* font-style: ; */
   color: blue;
-  margin-top: 20px;
+  margin-top: 30px;
+}
+
+div h1 {
+  color: black;
+  font-style: italic;
 }
 
 h2 {
@@ -118,6 +124,27 @@ button {
   font-weight: bold;
   color: blue;
   background-color: white;
+}
+
+.math h2 {
+  color: white;
+}
+.list-group-item a {
+  border: 20px black;
+
+}
+
+.list-group-item, 
+.nav-item  {
+  font-weight: bold;
+  font-size:  25px;
+  text-align: left;
+  padding-top: 5px;
+  border-color: black;
+  margin-bottom: 35px;
+  
+  /* padding-bottom: 10px;  */
+
 }
 
 

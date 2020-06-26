@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Outcome from './components/Outcome';
 import NumberPad from './components/NumberPad';
+import Links from './components/Links';
 import * as math from 'mathjs';
 import './App.css';
 
@@ -78,6 +79,7 @@ render() {
       <div className="calculator-frame">
         <Outcome outcome={this.state.outcome} />
         <NumberPad onClick={this.onClick} />
+        <Links  />
       </div>
     </div>
 
@@ -89,25 +91,6 @@ render() {
 
 
 
-  
-//     <div c
-//       className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
+
 
 export default App;
